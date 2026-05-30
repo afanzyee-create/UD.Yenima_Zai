@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<!--Bagian Header-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>UD. Yenima Zai | Jasa Penjahit Pakaian Wanita Profesional</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="icon"
+type="image/png"
+href="assets/img/logo.png">
+
+<style>
+/* CSS dari nomor 4 */
+    :root{
+
+    --bg-primary:#0F0A24;
+    --bg-secondary:#1A103D;
+
+    --gold:#D4AF37;
+    --gold-light:#F5D76E;
+
+    --ivory:#FAF9F6;
+    --text:#F8F8F8;
+
+    }
+
+    body{
+
+    font-family:'Poppins',sans-serif;
+    background:var(--ivory);
+    overflow-x:hidden;
+
+    }
+
+    h1,h2,h3{
+
+    font-family:'Playfair Display',serif;
+
+    }
+
+    .navbar{
+
+    background:
+    rgba(15,10,36,.75);
+
+    backdrop-filter:
+    blur(20px);
+
+    border-bottom:
+    1px solid rgba(212,175,55,.15);
+
+    }
+
+    .navbar-brand{
+
+    color:var(--gold)!important;
+    font-weight:700;
+    letter-spacing:2px;
+
+    }
+
+    .navbar.scrolled{
+    background:#0F0A24 !important;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+    }
+
+    .hero{
+
+    height:100vh;
+
+    height:100vh;
+
+    background:
+    linear-gradient(
+    rgba(15,10,36,.80),
+    rgba(15,10,36,.85)
+    ),
+
+    url('assets/img/hero.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+
+    }
+
+    .hero-content{
+    text-align:left;
+    }
+
+    .hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:0;
+    left:0;
+
+    width:100%;
+    height:150px;
+
+    background:
+    linear-gradient(
+    transparent,
+    #FAF9F6
+    );
+
+    }
+
+   .hero h1{
+
+    font-size:6rem;
+
+    font-weight:700;
+
+    line-height:1.1;
+
+    letter-spacing:3px;
+
+    font-family:'Playfair Display',serif;
+
+    color:white;
+
+    text-shadow:
+    0 10px 30px rgba(0,0,0,.5);
+
+    }
+
+   .hero p{
+
+    font-size:1.3rem;
+
+    color:#ddd;
+
+    max-width:700px;
+
+    margin:auto;
+
+    }
+
+   .btn-gold{
+
+    margin-top:30px;
+    background:
+    linear-gradient(
+    135deg,
+    #F5D76E,
+    #D4AF37
+    );
+
+    color:#000;
+
+    padding:
+    16px 45px;
+
+    border:none;
+
+    border-radius:
+    50px;
+
+    font-weight:600;
+
+    box-shadow:
+    0 15px 35px rgba(212,175,55,.35);
+
+    transition:.4s;
+
+    }
+
+    .btn-gold:hover{
+
+    transform:
+    translateY(-5px);
+
+    }
+
+    .section-title{
+
+    font-family:
+    'Playfair Display',serif;
+
+    font-size:3.5rem;
+
+    font-weight:700;
+
+    text-align:center;
+
+    color:#1A103D;
+
+    margin-bottom:60px;
+
+    position:relative;
+
+    }
+
+    .section-title::after{
+
+    content:"";
+
+    display:block;
+
+    width:100px;
+    height:3px;
+
+    background:#D4AF37;
+
+    margin:20px auto;
+
+    }
+
+   .service-card{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    transition:.4s;
+
+    border:1px solid transparent;
+
+    height:100%;
+
+    }
+
+    .service-card:hover{
+
+    transform:
+    translateY(-12px);
+
+    border-color:
+    #D4AF37;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.1);
+
+    }
+
+    #about{
+    padding:100px 0;
+    }
+
+    #gallery{
+    background:#f5f5f5;
+    padding:100px 0;
+    }
+
+   #gallery img{
+
+    height:380px;
+
+    width:100%;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    transition:.5s;
+
+    }
+
+    #gallery img:hover{
+
+    transform:
+    scale(1.06);
+
+    }
+
+    #contact{
+    padding:100px 0;
+    background:white;
+    }
+
+   footer{
+
+    background:#0F0A24;
+
+    color:white;
+
+    padding:80px 20px;
+
+    text-align:center;
+
+    }
+
+    footer img{
+
+    width:120px;
+
+    margin-bottom:20px;
+
+    filter:
+    drop-shadow(
+    0 0 20px rgba(212,175,55,.5)
+    );
+
+    }
+
+    #waForm{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    max-width:600px;
+    margin:auto;
+    }
+
+    #waForm input{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    }
+
+    .stats{
+
+    background:
+    linear-gradient(
+    135deg,
+    #0F0A24,
+    #1A103D
+    );
+
+    padding:100px 0;
+
+    }
+
+    .stats h2{
+
+    font-size:4rem;
+
+    font-weight:700;
+
+    color:#D4AF37;
+
+    text-shadow:
+    0 0 15px rgba(212,175,55,.3);
+
+    }
+
+    .wa-float{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:65px;
+    height:65px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+    text-decoration:none;
+    z-index:9999;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+    }
+
+    footer hr{
+    max-width:300px;
+    margin:auto;
+    opacity:.3;
+    }
+
+    footer .small{
+    font-size:.9rem;
+    opacity:.8;
+    }
+
+    html{
+
+    scroll-behavior:smooth;
+
+    }
+
+    section{
+
+    padding:
+    100px 0;
+
+    }
+
+    body{
+
+    overflow-x:hidden;
+
+    background:#FAF9F6;
+
+    }
+
+    @media (max-width:768px){
+
+    .hero h1{
+    font-size:2.5rem;
+    }
+
+    .hero p{
+    font-size:1rem;
+    padding:0 15px;
+    }
+
+    }
+
+    @media (max-width:768px){
+
+    .logo-frame{
+    width:50px;
+    height:50px;
+    }
+
+    .brand-title{
+    font-size:1rem;
+    }
+
+    .brand-tagline{
+    font-size:.6rem;
+    }
+
+    }
+
+    @media (max-width:768px){
+
+    .section-title{
+    font-size:2rem;
+    }
+
+    }
+
+    @media (max-width:768px){
+
+    #gallery img{
+    height:250px;
+    }
+
+    }
+
+    @media (max-width:768px){
+
+    .stats .col-md-3{
+    margin-bottom:30px;
+    }
+
+    }
+
+    .stat-icon{
+
+    font-size:3rem;
+
+    color:#D4AF37;
+
+    margin-bottom:20px;
+
+    display:block;
+
+    transition:.4s;
+
+    }
+
+    .stats .col-md-3:hover .stat-icon{
+
+    transform:
+    translateY(-8px)
+    scale(1.1);
+
+    color:#F5D76E;
+
+    }
+
+    .stats h2{
+
+    font-size:4rem;
+
+    font-weight:700;
+
+    color:#D4AF37;
+
+    margin-bottom:10px;
+
+    font-family:'Playfair Display',serif;
+
+    }
+
+    .stats p{
+
+    color:#ddd;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+<div class="container">
+
+<img
+src="assets/img/logo.png"
+alt="Logo"
+width="50"
+class="me-3">
+
+<div>
+
+<a class="navbar-brand" href="#">
+TAYLOR - YENIMA ZAI
+</a>
+
+<button
+class="navbar-toggler"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#tentang kami">Tentang Kami</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#layanan">Layanan</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#galeri">Galeri</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#kontak">Kontak</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+<div class="container hero-content">
+
+<h1 data-aos="fade-up">
+Keanggunan Dalam Setiap Jahitan
+</h1>
+
+<p data-aos="fade-up" data-aos-delay="300">
+
+Busana wanita yang dirancang dengan ketelitian,
+keindahan, dan sentuhan profesional untuk setiap pelanggan.
+
+</p>
+
+<a href="#kontak" class="btn btn-gold">
+Konsultasi Sekarang
+</a>
+
+</div>
+
+</section>
+
+<!-- TENTANG KAMI -->
+<section id="tentang kami" class="py-5">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<h2 class="section-title">
+Tentang Kami
+</h2>
+
+<p>
+UD. Yenima Zai merupakan usaha jahit pakaian wanita
+yang berlokasi di Desa Banua Gea,
+Kecamatan Tuhemberua,
+Kabupaten Nias Utara.
+</p>
+
+<p>
+Saya menghadirkan busana yang elegan,
+nyaman, dan dibuat secara profesional
+sesuai kebutuhan pelanggan.
+</p>
+
+</div>
+
+<div class="col-lg-6">
+
+<img
+src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=1200"
+class="img-fluid rounded-4 shadow">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- LAYANAN-->
+<section id="layanan" class="py-5">
+
+<div class="container">
+
+<h2 class="section-title">
+Layanan Unggulan
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="service-card">
+
+<h4>Jahit Kebaya Premium</h4>
+
+<p>
+Kebaya elegan untuk wisuda,
+pesta dan acara formal.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="service-card">
+
+<h4>Jahit Gaun Pesta</h4>
+
+<p>
+Dress eksklusif sesuai karakter
+dan kebutuhan pelanggan.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="service-card">
+
+<h4>Busana Adat Nias</h4>
+
+<p>
+Busana adat Nias dengan sentuhan modern.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GALERI -->
+<section id="galeri" class="py-5 bg-light">
+
+<div class="container">
+
+<h2 class="section-title">
+Galeri Hasil Jahitan
+</h2>
+
+<div class="row">
+
+<div class="col-md-4 mb-4">
+<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=1200"
+class="img-fluid rounded">
+</div>
+
+<div class="col-md-4 mb-4">
+<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1200"
+class="img-fluid rounded">
+</div>
+
+<div class="col-md-4 mb-4">
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1200"
+class="img-fluid rounded">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- STATISTICS -->
+<section class="stats">
+
+<div class="container">
+
+<div class="row text-center">
+
+<div class="col-md-3 mb-4">
+
+<i class="fas fa-users stat-icon"></i>
+
+<h2 class="counter" data-target="500">0</h2>
+
+<p>Pelanggan Puas</p>
+
+</div>
+
+<div class="col-md-3 mb-4">
+
+<i class="fas fa-shirt stat-icon"></i>
+
+<h2 class="counter" data-target="1200">0</h2>
+
+<p>Busana Selesai</p>
+
+</div>
+
+<div class="col-md-3 mb-4">
+
+<i class="fas fa-award stat-icon"></i>
+
+<h2 class="counter" data-target="10">0</h2>
+
+<p>Tahun Pengalaman</p>
+
+</div>
+
+<div class="col-md-3 mb-4">
+
+<i class="fas fa-star stat-icon"></i>
+
+<h2 class="counter" data-target="98">0</h2>
+
+<p>Tingkat Kepuasan</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TESTIMONI -->
+<section class="py-5">
+
+<div class="container">
+
+<h2 class="section-title">
+Testimoni Pelanggan
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="service-card">
+
+⭐⭐⭐⭐⭐
+
+<p>
+Hasil jahitan sangat rapi
+dan sesuai keinginan.
+</p>
+
+<strong>
+Maria Hulu
+</strong>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="service-card">
+
+⭐⭐⭐⭐⭐
+
+<p>
+Pelayanan ramah dan cepat.
+</p>
+
+<strong>
+Yuliana Zega
+</strong>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="service-card">
+
+⭐⭐⭐⭐⭐
+
+<p>
+Kebaya yang dibuat sangat elegan.
+</p>
+
+<strong>
+Novita Gulo
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- KONTAK -->
+<section id="kontak" class="py-5 bg-light">
+
+<div class="container">
+
+<h2 class="section-title">
+Konsultasi & Pemesanan
+</h2>
+
+<form id="waForm">
+
+<input
+type="text"
+id="nama"
+placeholder="Nama Lengkap">
+
+<input
+type="text"
+id="hp"
+placeholder="WhatsApp">
+
+<input
+type="text"
+id="hp"
+placeholder="Jenis Pakaian">
+
+<input
+type="text"
+id="hp"
+placeholder="Tanggal Dibutuhkan">
+
+<input
+type="text"
+id="hp"
+placeholder="Catatan Tambahan">
+
+<button
+type="button"
+onclick="sendWA()"
+class="btn btn-gold">
+
+Kirim
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- MAPS -->
+<section>
+
+<iframe
+src="https://maps.google.com/maps?q=Tuhemberua%20Nias%20Utara&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="450"
+style="border:0;">
+</iframe>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+<h2>UD. YENIMA ZAI</h2>
+
+<p class="text-warning">
+Keanggunan Dalam Setiap Jahitan
+</p>
+
+<p>
+Desa Banua Gea,
+Kecamatan Tuhemberua,
+Kabupaten Nias Utara
+</p>
+
+<p>
+WhatsApp: +62 822-6869-4311
+</p>
+
+<p>
+Email: yenimazai11@gmail.com
+</p>
+
+<hr class="my-4 border-warning">
+
+<p>
+© <span id="tahun"></span> UD. Yenima Zai. Semua Hak Dilindungi.
+</p>
+
+<p class="small text-warning">
+Website Resmi UD. Yenima Zai
+</p>
+
+</footer>
+
+<!-- JS -->
+<script>
+
+function sendWA(){
+
+let nama =
+document.getElementById("nama").value;
+
+let hp =
+document.getElementById("hp").value;
+
+let pesan =
+`Halo Yenima Zai Tailor
+
+Nama : ${nama}
+HP : ${hp}
+
+Saya ingin konsultasi jahitan.`;
+
+window.open(
+`https://wa.me/6282268694311?text=${encodeURIComponent(pesan)}`
+);
+
+}
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
+
+<a href="https://wa.me/6282268694311"
+class="wa-float"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<script>
+document.getElementById("tahun").innerHTML =
+new Date().getFullYear();
+</script>
+
+<script>
+
+const counters = document.querySelectorAll('.counter');
+
+const observer = new IntersectionObserver((entries) => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting){
+
+const counter = entry.target;
+
+const target = +counter.getAttribute('data-target');
+
+let count = 0;
+
+const speed = target / 100;
+
+const updateCount = () => {
+
+if(count < target){
+
+count += speed;
+
+counter.innerText = Math.ceil(count);
+
+requestAnimationFrame(updateCount);
+
+}else{
+
+if(target === 98){
+
+counter.innerText = target + "%";
+
+}else{
+
+counter.innerText = target + "+";
+
+}
+
+}
+
+};
+
+updateCount();
+
+observer.unobserve(counter);
+
+}
+
+});
+
+},{threshold:0.5});
+
+counters.forEach(counter=>{
+observer.observe(counter);
+});
+
+window.addEventListener("scroll",function(){
+
+const navbar =
+document.querySelector(".navbar");
+
+navbar.classList.toggle(
+"scrolled",
+window.scrollY > 50
+);
+
+});
+
+</script>
+
+</body>
+</html>
+
+    
